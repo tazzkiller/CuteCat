@@ -32,7 +32,6 @@ module.exports = {
     context.font = applyText(canvas, messageUpperText);
     const textWidth = context.measureText(messageUpperText).width;
     context.fillStyle = "#ffffff";
-    const strokeWidth = 3;
     context.strokeStyle = "black";
     const newSize = parseFloat(context.font.match(match).groups.value) * 0.03;
     context.lineWidth = newSize;
